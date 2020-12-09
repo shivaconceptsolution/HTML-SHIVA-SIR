@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		c1="";
+		c2="";
+		function fun1()
+		{
+		 if(document.getElementById("c1").checked)
+		 {
+          c1 =document.getElementById("c1").value;
+		 } 
+		 else
+		 {
+           c1="";
+		 }
+         document.getElementById("res").innerHTML=c1+c2;
+
+		}
+		function fun2()
+		{
+		if(document.getElementById("c2").checked)
+		 {
+          c2 =document.getElementById("c2").value;
+		 } 
+		 else
+		 {
+           c2="";
+		 }
+         document.getElementById("res").innerHTML=c1+c2;
+
+		}
+	</script>
+</head>
+<body>
+<input type="checkbox" name="c1" id="c1" value="C" onchange="fun1()">C
+<br><br>
+<input type="checkbox" name="c2" id="c2" value="CPP" onchange="fun2()">CPP
+<br><br>
+<div id="res"></div>
+</body>
+</html>

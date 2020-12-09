@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		r1=" ";
+		r2=" ";
+		function fun(data)
+		{
+         r1=data;
+         document.getElementById("res").innerHTML=r1+r2;
+		}
+        function fun1(data)
+		{
+         r2=data;
+         document.getElementById("res").innerHTML=r1+r2;
+		}
+	</script>
+</head>
+<body>
+<select id="country" onchange="fun(this.value)">
+	<option value="">Select Country</option>
+	<option value="INDIA">INDIA</option>
+	<option value="USA">USA</option>
+	<option value="CHINA">CHINA</option>
+	<option value="JAPAN">JAPAN</option>
+</select>
+<br><br>
+<select id="state" onchange="fun1(this.value)">
+	<option value="">Select State</option>
+	<option value="MP">MP</option>
+	<option value="UP">UP</option>
+	<option value="AP">AP</option>
+	<option value="HP">HP</option>
+</select>
+<div id="res"></div>
+</body>
+</html>

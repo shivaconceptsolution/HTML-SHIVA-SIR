@@ -1,0 +1,23 @@
+
+header .jumbotron
+{
+	background-color: black;
+	color: white;
+
+}
+
+header .col
+{
+
+}
+footer .jumbotron
+{
+	background-color: gray;
+	color: white;
+
+}
+.part1
+{
+	background-color:yellow;
+	color:black;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		span
+		{
+			color:red;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function validate()
+		{
+			name = document.getElementById("txtname").value;
+			pass = document.getElementById("txtpass").value;
+			cpass = document.getElementById("txtcpass").value;
+			email = document.getElementById("txtemail").value;
+			mobile = document.getElementById("txtmobile").value;
+			atpos = email.indexOf("@");
+			dotpos = email.lastIndexOf(".");
+			if(name.length==0)
+			{
+				document.getElementById("spname").innerHTML="Enter name first";
+				return false;
+			}
+			if(pass.length<5)
+			{
+				document.getElementById("sppass").innerHTML="Password length should be above five";
+				return false;
+			}
+			if(pass!=cpass)
+			{
+				document.getElementById("sppass").innerHTML="Password Mismatch from confirm password";
+				return false;
+			}
+			if(isNaN(mobile))
+			{
+				document.getElementById("spmobile").innerHTML="Mobile number should be numeric";
+				return false;
+			}
+			if(mobile.length!=10)
+			{
+				document.getElementById("spmobile").innerHTML="Mobile number should be 10 digit";
+				return false;
+			}
+			if(atpos==-1 || dotpos == -1 || dotpos<atpos || (dotpos-atpos)<2)
+			{
+				document.getElementById("spemail").innerHTML="Invalid emailid";
+				return false;
+			}
+
+		}
+
+	</script>
+</head>
+<body>
+<form action="addition.html">
+	<input type="text" id="txtname" placeholder="Enter name" /><span id="spname"></span>
+	<br>
+	<br>
+	<input type="password" id="txtpass" placeholder="Enter password" /><span id="sppass"></span>
+	<br>
+	<br>
+	<input type="password" id="txtcpass" placeholder="Enter confirm password" />
+	<br>
+	<br>
+	<input type="text" id="txtmobile" placeholder="Enter mobileno" /><span id="spmobile"></span>
+	<br>
+	<br>
+	<input type="text" id="txtemail" placeholder="Enter emailid" /><span id="spemail"></span>
+	<br>
+	<br>
+	<input type="submit" id="btnsubmit" value="Click" onclick="return validate()" >
+</body>
+</html>

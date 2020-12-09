@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+         $("#btn").click(function(){
+
+         	  a = parseInt($("#txtnum1").val());
+         	  b = parseInt($("#txtnum2").val());
+         	  c=a+b;
+         	 $("#sp").html(c);
+         });
+			
+		})
+
+	</script>
+</head>
+<body>
+<input type="text" id="txtnum1" placeholder="Enter First Number" />
+<br><br>
+<input type="text" id="txtnum2" placeholder="Enter Second Number" />
+<br><br>
+<input type="button" id="btn" value="click" />
+<br><br>
+<span id="sp"></span>
+</body>
+</html>

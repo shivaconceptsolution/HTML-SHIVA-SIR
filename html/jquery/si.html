@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+         $("#btn").click(function(){
+
+         	  p = parseInt($("#txtnum1").val());
+         	 r = parseInt($("#txtnum2").val());
+         	 t = parseInt($("#txtnum2").val());
+         	  si=(p*r*t)/100;
+         	 $("#sp").html(si);
+         });
+			
+		})
+	</script>
+</head>
+<body>
+<input type="text" id="txtnum1" placeholder="Enter p" />
+<br><br>
+<input type="text" id="txtnum2" placeholder="Enter r" />
+<br><br>
+<input type="text" id="txtnum3" placeholder="Entert" />
+<br><br>
+<input type="button" id="btn" value="click" />
+<br><br>
+<span id="sp"></span>
+
+
+</body>
+</html>

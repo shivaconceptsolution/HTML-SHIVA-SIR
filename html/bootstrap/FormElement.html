@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="style.css" />
+       <script src="jquery.min.js"></script>
+       <script src="popper.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+	<div class="progress">
+  <div class="progress-bar" style="width:70%"></div>
+  <div class="spinner-border"></div>
+</div>
+	<button class="btn">FIRST</button>
+    <button class="btn btn-primary btn-block">Second</button>
+    <button class="btn btn-primary btn-block" disabled>Second</button>
+    <button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+</button>
+
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+<button class="btn btn-primary" disabled>
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+<button class="btn btn-primary" disabled>
+  <span class="spinner-grow spinner-grow-sm"></span>
+  Loading..
+</button>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+</div>
+
+
+</div>
+<div class="container">
+  <h2>Nesting Button Groups</h2>
+  <p>Nest button groups to create dropdown menus:</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Sony
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
